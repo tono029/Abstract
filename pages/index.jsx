@@ -1,6 +1,6 @@
 import { Canvas } from '@react-three/fiber'
 import Head from 'next/head'
-import { OrbitControls, Plane } from '@react-three/drei'
+import { OrbitControls } from '@react-three/drei'
 import dynamic from 'next/dynamic'
 
 const Model = dynamic(() => import("../components/abstract"), {ssr: false})
