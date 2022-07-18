@@ -10,6 +10,7 @@ export default function Home() {
     <div className={"main"}>
       <Head>
         <title>Abstract</title>
+        <meta name='viewport' content='width=devise-width, initial-scale=1.0' />
       </Head>
 
       <div className="app_title" style={{color: "white"}}>
@@ -20,22 +21,10 @@ export default function Home() {
       <Canvas shadows>
         <color attach={"background"} args={["darkblue"]} />
 
-        <ambientLight />
-        {/* <pointLight castShadow position={[-3, 10, 0]} /> */}
-
         <OrbitControls
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-
-        {/* <Plane 
-          receiveShadow 
-          rotation={[-Math.PI / 2, 0, 0]} 
-          position={[0, -2, 0]}
-          args={[20, 20]}
-        >
-          <shadowMaterial />
-        </Plane> */}
 
         <Model />
       </Canvas>
