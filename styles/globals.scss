@@ -51,7 +51,8 @@ a {
 }
 
 .lil-gui {
-  width: 5vw;
+  width: 40vw !important;
+  max-width: 300px;
   top: 1% !important;
   right: 1% !important;
   border-radius:10px;
